@@ -1,5 +1,5 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js buil
 
 PATH: 
   C:\Users\mmcke\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\mmcke\bin;C:\Program Files\Docker\Docker\Resources\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\ProgramData\chocolatey\bin;C:\Program Files\PuTTY;C:\HashiCorp\Vagrant\bin;C:\Users\mmcke\Homestead;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Microsoft VS Code\bin;C:\Program Files\Java\jdk1.8.0_172\bin;C:\WINDOWS\System32\OpenSSH;C:\Program Files\JetBrains\PyCharm Community Edition 2018.1.4\bin;C:\Users\mmcke\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\cmd;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Program Files (x86)\Yarn\bin;C:\Users\mmcke\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\mmcke\AppData\Local\Programs\Python\Python37;C:\Users\mmcke\AppData\Local\Microsoft\WindowsApps;C:\Users\mmcke\AppData\Roaming\Composer\vendor\bin;C:\Users\mmcke\AppData\Roaming\npm;C:\Program Files\Microsoft VS Code\bin;C:\Users\mmcke\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\mmcke\AppData\Local\Yarn\bin;C:\Users\mmcke\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
@@ -29,7 +29,7 @@ npm manifest:
   		"css-loader": "^0.28.8",
   		"file-loader": "^1.1.6",
   		"filemanager-webpack-plugin": "^1.0.27",
-  		"html-webpack-plugin": "^2.30.1",
+  		"html-webpack-plugin": "^3.2.0",
   		"mini-css-extract-plugin": "^0.4.2",
   		"optimize-css-assets-webpack-plugin": "^3.2.0",
   		"style-loader": "^0.19.1",
@@ -943,7 +943,7 @@ Lockfile:
       readable-stream "^2.3.5"
       safe-buffer "^5.1.1"
   
-  bluebird@^3.4.7, bluebird@^3.5.1:
+  bluebird@^3.5.1:
     version "3.5.1"
     resolved "https://registry.yarnpkg.com/bluebird/-/bluebird-3.5.1.tgz#d9551f9de98f1fcda1e683d17ee91a0602ee2eb9"
   
@@ -1277,11 +1277,11 @@ Lockfile:
       isobject "^3.0.0"
       static-extend "^0.1.1"
   
-  clean-css@4.1.x:
-    version "4.1.11"
-    resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.1.11.tgz#2ecdf145aba38f54740f26cefd0ff3e03e125d6a"
+  clean-css@4.2.x:
+    version "4.2.1"
+    resolved "https://registry.yarnpkg.com/clean-css/-/clean-css-4.2.1.tgz#2d411ef76b8569b6d0c84068dabe85b0aa5e5c17"
     dependencies:
-      source-map "0.5.x"
+      source-map "~0.6.0"
   
   cli-cursor@^2.1.0:
     version "2.1.0"
@@ -1366,9 +1366,9 @@ Lockfile:
     version "1.1.2"
     resolved "https://registry.yarnpkg.com/colors/-/colors-1.1.2.tgz#168a4701756b6a7f51a12ce0c97bfa28c084ed63"
   
-  commander@2.15.x, commander@~2.15.0:
-    version "2.15.1"
-    resolved "https://registry.yarnpkg.com/commander/-/commander-2.15.1.tgz#df46e867d0fc2aec66a34662b406a9ccafff5b0f"
+  commander@2.17.x, commander@~2.17.1:
+    version "2.17.1"
+    resolved "https://registry.yarnpkg.com/commander/-/commander-2.17.1.tgz#bd77ab7de6de94205ceacc72f1716d29f20a77bf"
   
   commander@~2.13.0:
     version "2.13.0"
@@ -1717,6 +1717,12 @@ Lockfile:
       execa "^0.10.0"
       ip-regex "^2.1.0"
   
+  define-properties@^1.1.2:
+    version "1.1.3"
+    resolved "https://registry.yarnpkg.com/define-properties/-/define-properties-1.1.3.tgz#cf88da6cbee26fe6db7094f61d870cbd84cee9f1"
+    dependencies:
+      object-keys "^1.0.12"
+  
   define-property@^0.2.5:
     version "0.2.5"
     resolved "https://registry.yarnpkg.com/define-property/-/define-property-0.2.5.tgz#c35b1ef918ec3c990f9a5bc57be04aacec5c8116"
@@ -1815,7 +1821,7 @@ Lockfile:
   
   dom-converter@~0.1:
     version "0.1.4"
-    resolved "https://registry.yarnpkg.com/dom-converter/-/dom-converter-0.1.4.tgz#a45ef5727b890c9bffe6d7c876e7b19cb0e17f3b"
+    resolved "http://registry.npmjs.org/dom-converter/-/dom-converter-0.1.4.tgz#a45ef5727b890c9bffe6d7c876e7b19cb0e17f3b"
     dependencies:
       utila "~0.3"
   
@@ -1921,6 +1927,24 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/errno/-/errno-0.1.7.tgz#4684d71779ad39af177e3f007996f7c67c852618"
     dependencies:
       prr "~1.0.1"
+  
+  es-abstract@^1.5.1:
+    version "1.12.0"
+    resolved "https://registry.yarnpkg.com/es-abstract/-/es-abstract-1.12.0.tgz#9dbbdd27c6856f0001421ca18782d786bf8a6165"
+    dependencies:
+      es-to-primitive "^1.1.1"
+      function-bind "^1.1.1"
+      has "^1.0.1"
+      is-callable "^1.1.3"
+      is-regex "^1.0.4"
+  
+  es-to-primitive@^1.1.1:
+    version "1.1.1"
+    resolved "https://registry.yarnpkg.com/es-to-primitive/-/es-to-primitive-1.1.1.tgz#45355248a88979034b6792e19bb81f2b7975dd0d"
+    dependencies:
+      is-callable "^1.1.1"
+      is-date-object "^1.0.1"
+      is-symbol "^1.0.1"
   
   escape-html@~1.0.3:
     version "1.0.3"
@@ -2503,27 +2527,28 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/html-entities/-/html-entities-1.2.1.tgz#0df29351f0721163515dfb9e5543e5f6eed5162f"
   
   html-minifier@^3.2.3:
-    version "3.5.17"
-    resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.17.tgz#fe9834c4288e4d5b4dfe18fbc7f3f811c108e5ea"
+    version "3.5.20"
+    resolved "https://registry.yarnpkg.com/html-minifier/-/html-minifier-3.5.20.tgz#7b19fd3caa0cb79f7cde5ee5c3abdf8ecaa6bb14"
     dependencies:
       camel-case "3.0.x"
-      clean-css "4.1.x"
-      commander "2.15.x"
+      clean-css "4.2.x"
+      commander "2.17.x"
       he "1.1.x"
       param-case "2.1.x"
       relateurl "0.2.x"
       uglify-js "3.4.x"
   
-  html-webpack-plugin@^2.30.1:
-    version "2.30.1"
-    resolved "https://registry.yarnpkg.com/html-webpack-plugin/-/html-webpack-plugin-2.30.1.tgz#7f9c421b7ea91ec460f56527d78df484ee7537d5"
+  html-webpack-plugin@^3.2.0:
+    version "3.2.0"
+    resolved "http://registry.npmjs.org/html-webpack-plugin/-/html-webpack-plugin-3.2.0.tgz#b01abbd723acaaa7b37b6af4492ebda03d9dd37b"
     dependencies:
-      bluebird "^3.4.7"
       html-minifier "^3.2.3"
       loader-utils "^0.2.16"
       lodash "^4.17.3"
       pretty-error "^2.0.2"
+      tapable "^1.0.0"
       toposort "^1.0.0"
+      util.promisify "1.0.0"
   
   htmlparser2@~3.3.0:
     version "3.3.0"
@@ -2747,6 +2772,10 @@ Lockfile:
     version "1.1.6"
     resolved "https://registry.yarnpkg.com/is-buffer/-/is-buffer-1.1.6.tgz#efaa2ea9daa0d7ab2ea13a97b2b8ad51fefbe8be"
   
+  is-callable@^1.1.1, is-callable@^1.1.3:
+    version "1.1.4"
+    resolved "https://registry.yarnpkg.com/is-callable/-/is-callable-1.1.4.tgz#1e1adf219e1eeb684d691f9d6a05ff0d30a24d75"
+  
   is-data-descriptor@^0.1.4:
     version "0.1.4"
     resolved "https://registry.yarnpkg.com/is-data-descriptor/-/is-data-descriptor-0.1.4.tgz#0b5ee648388e2c860282e793f1856fec3f301b56"
@@ -2758,6 +2787,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/is-data-descriptor/-/is-data-descriptor-1.0.0.tgz#d84876321d0e7add03990406abbbbd36ba9268c7"
     dependencies:
       kind-of "^6.0.0"
+  
+  is-date-object@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/is-date-object/-/is-date-object-1.0.1.tgz#9aa20eb6aeebbff77fbd33e74ca01b33581d3a16"
   
   is-descriptor@^0.1.0:
     version "0.1.6"
@@ -2891,6 +2924,12 @@ Lockfile:
     version "2.1.0"
     resolved "https://registry.yarnpkg.com/is-promise/-/is-promise-2.1.0.tgz#79a2a9ece7f096e80f36d2b2f3bc16c1ff4bf3fa"
   
+  is-regex@^1.0.4:
+    version "1.0.4"
+    resolved "https://registry.yarnpkg.com/is-regex/-/is-regex-1.0.4.tgz#5517489b547091b0930e095654ced25ee97e9491"
+    dependencies:
+      has "^1.0.1"
+  
   is-stream@^1.1.0:
     version "1.1.0"
     resolved "https://registry.yarnpkg.com/is-stream/-/is-stream-1.1.0.tgz#12d4a3dd4e68e0b79ceb8dbc84173ae80d91ca44"
@@ -2900,6 +2939,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/is-svg/-/is-svg-2.1.0.tgz#cf61090da0d9efbcab8722deba6f032208dbb0e9"
     dependencies:
       html-comment-regex "^1.1.0"
+  
+  is-symbol@^1.0.1:
+    version "1.0.1"
+    resolved "https://registry.yarnpkg.com/is-symbol/-/is-symbol-1.0.1.tgz#3cc59f00025194b6ab2e38dbae6689256b660572"
   
   is-windows@^1.0.2:
     version "1.0.2"
@@ -3078,11 +3121,11 @@ Lockfile:
     version "4.5.0"
     resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   
-  lodash@^4.17.10, lodash@^4.17.3, lodash@^4.17.4, lodash@^4.8.0:
+  lodash@^4.17.10, lodash@^4.17.4, lodash@^4.8.0:
     version "4.17.10"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.10.tgz#1b7793cf7259ea38fb3661d4d38b3260af8ae4e7"
   
-  lodash@^4.17.5:
+  lodash@^4.17.3, lodash@^4.17.5:
     version "4.17.11"
     resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.11.tgz#b39ea6229ef607ecd89e2c8df12536891cac9b8d"
   
@@ -3539,11 +3582,22 @@ Lockfile:
       define-property "^0.2.5"
       kind-of "^3.0.3"
   
+  object-keys@^1.0.12:
+    version "1.0.12"
+    resolved "https://registry.yarnpkg.com/object-keys/-/object-keys-1.0.12.tgz#09c53855377575310cca62f55bb334abff7b3ed2"
+  
   object-visit@^1.0.0:
     version "1.0.1"
     resolved "https://registry.yarnpkg.com/object-visit/-/object-visit-1.0.1.tgz#f79c4493af0c5377b59fe39d395e41042dd045bb"
     dependencies:
       isobject "^3.0.0"
+  
+  object.getownpropertydescriptors@^2.0.3:
+    version "2.0.3"
+    resolved "https://registry.yarnpkg.com/object.getownpropertydescriptors/-/object.getownpropertydescriptors-2.0.3.tgz#8758c846f5b407adab0f236e0986f14b051caa16"
+    dependencies:
+      define-properties "^1.1.2"
+      es-abstract "^1.5.1"
   
   object.omit@^2.0.0:
     version "2.0.1"
@@ -4219,7 +4273,7 @@ Lockfile:
   
   readable-stream@1.0:
     version "1.0.34"
-    resolved "https://registry.yarnpkg.com/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
+    resolved "http://registry.npmjs.org/readable-stream/-/readable-stream-1.0.34.tgz#125820e34bc842d2f2aaafafe4c2916ee32c157c"
     dependencies:
       core-util-is "~1.0.0"
       inherits "~2.0.1"
@@ -4674,11 +4728,11 @@ Lockfile:
     version "0.4.0"
     resolved "https://registry.yarnpkg.com/source-map-url/-/source-map-url-0.4.0.tgz#3e935d7ddd73631b97659956d55128e87b5084a3"
   
-  source-map@0.5.x, source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7:
+  source-map@^0.5.3, source-map@^0.5.6, source-map@^0.5.7:
     version "0.5.7"
     resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.5.7.tgz#8a039d2d1021d22d1ea14c80d8ea468ba2ef3fcc"
   
-  source-map@^0.6.1, source-map@~0.6.1:
+  source-map@^0.6.1, source-map@~0.6.0, source-map@~0.6.1:
     version "0.6.1"
     resolved "https://registry.yarnpkg.com/source-map/-/source-map-0.6.1.tgz#74722af32e9614e9c287a8d0bbde48b5e2f1a263"
   
@@ -4984,10 +5038,10 @@ Lockfile:
       source-map "~0.6.1"
   
   uglify-js@3.4.x:
-    version "3.4.2"
-    resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.2.tgz#70511a390eb62423675ba63c374ba1abf045116c"
+    version "3.4.9"
+    resolved "https://registry.yarnpkg.com/uglify-js/-/uglify-js-3.4.9.tgz#af02f180c1207d76432e473ed24a28f4a782bae3"
     dependencies:
-      commander "~2.15.0"
+      commander "~2.17.1"
       source-map "~0.6.1"
   
   uglifyjs-webpack-plugin@^1.1.6:
@@ -5111,6 +5165,13 @@ Lockfile:
   util-deprecate@~1.0.1:
     version "1.0.2"
     resolved "https://registry.yarnpkg.com/util-deprecate/-/util-deprecate-1.0.2.tgz#450d4dc9fa70de732762fbd2d4a28981419a0ccf"
+  
+  util.promisify@1.0.0:
+    version "1.0.0"
+    resolved "https://registry.yarnpkg.com/util.promisify/-/util.promisify-1.0.0.tgz#440f7165a459c9a16dc145eb8e72f35687097030"
+    dependencies:
+      define-properties "^1.1.2"
+      object.getownpropertydescriptors "^2.0.3"
   
   util@0.10.3:
     version "0.10.3"
@@ -5384,17 +5445,14 @@ Lockfile:
       readable-stream "^2.0.0"
 
 Trace: 
-  Error: Command failed.
-  Exit code: 1
-  Command: C:\Program Files\git\bin\bash.exe
-  Arguments: -c webpack-dev-server
-  Directory: C:\Users\mmcke\code\starter-app
-  Output:
-  
-      at ProcessTermError.MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
-      at new ProcessTermError (C:\Program Files (x86)\Yarn\lib\cli.js:226:113)
-      at ChildProcess.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:30281:17)
-      at emitTwo (events.js:126:13)
-      at ChildProcess.emit (events.js:214:7)
-      at maybeClose (internal/child_process.js:925:16)
-      at Process.ChildProcess._handle.onexit (internal/child_process.js:209:5)
+  Error: Command "buil" not found. Did you mean "build"?
+      at new MessageError (C:\Program Files (x86)\Yarn\lib\cli.js:186:110)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:87307:17
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:98:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:116:14
+      at new Promise (<anonymous>)
+      at new F (C:\Program Files (x86)\Yarn\lib\cli.js:23451:28)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:95:12
+      at runCommand (C:\Program Files (x86)\Yarn\lib\cli.js:87312:22)
+      at Object.<anonymous> (C:\Program Files (x86)\Yarn\lib\cli.js:87412:14)

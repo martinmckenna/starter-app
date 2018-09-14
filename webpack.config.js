@@ -61,7 +61,7 @@ module.exports = {
 		new UglifyJSPlugin({
 			sourceMap: true,
 		}),
-		new HtmlWebpackPlugin({ title: 'AtMarty - Home', template: './dist/templates/index.html' }),
+		new HtmlWebpackPlugin({ template: './dist/templates/index.html' }),
 		new FileManagerPlugin({
 			onEnd: {
 				move: [
