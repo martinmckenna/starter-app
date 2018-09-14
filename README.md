@@ -1,8 +1,8 @@
-## Front-End Starter
+# Front-End Starter
 
-### Features
+## Features
 
-#### Webpack 4 and Webpack Dev Server
+### Webpack 4 and Webpack Dev Server
 
 Comes with a pre-configured Webpack 4 setup with webpack-dev-server. 
 Please note, source maps have been turned on so this will need to be
@@ -10,9 +10,9 @@ configured further for a production environment
 
 Run `yarn start` to run the dev server
 
-### Usage
+## Usage
 
-#### Creating a new page
+### Creating a new page
 
 1. Add your new page. For example, `about.html` to the `/dist/templates` directory
 without any css or js files
